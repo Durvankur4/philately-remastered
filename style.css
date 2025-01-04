@@ -1,0 +1,277 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --light-yellow: #fef6e5;
+  --light-brown: #d6c2a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  text-decoration: none;
+  text-wrap: wrap;
+}
+
+/* ------------------NAV-START-------------------------- */
+
+.nav-bar {
+  background-color: var(--light-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.body {
+  color: var();
+}
+
+.nav-bar .logo {
+  margin-top: 10px;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-bar li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 16px;
+}
+
+button {
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 32px;
+  height: 32px;
+  width: 98px;
+  cursor: pointer;
+}
+
+.nav-bar button:last-child {
+  border-radius: 50%;
+  width: 32px;
+}
+
+/* ------------------NAV-END------------------------------ */
+
+/* -------------------HERO-START--------------------------- */
+
+.hero {
+  background-image: url(./images/hero-background.png);
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding: 48px;
+  height: 50vh;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+  font-weight: 900;
+}
+
+.hero p {
+  width: 350px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* -------------------HERO-END--------------------------- */
+
+/* --------------------CONTENT------------------------- */
+
+/* ------article-1------ */
+
+.article-1 {
+  background-image: url(./images/website-background.png);
+  background-size: cover;
+  padding: 48px;
+  font-size: 18px;
+}
+
+.article-1 .do-you-know {
+  display: flex;
+  padding: 1rem;
+  gap: 48px;
+}
+
+.article-1 .philately-story h1 {
+  text-align: center;
+  padding: 24px;
+}
+
+.article-1 .philately-story span {
+  display: block;
+  padding: 8px;
+}
+/* ------article-1-END------ */
+
+/* ----lear-more---------- */
+
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  position: relative;
+  margin: 16px 0;
+}
+
+.learn-more::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/learn-more-cover.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 50px 0 50px;
+  inset: 0;
+  opacity: 0.5;
+}
+
+.learn-more p,
+button {
+  margin: 12px;
+  isolation: isolate;
+}
+
+/* ----lear-more-END---------- */
+
+/* ------site-offerings--------- */
+.site-offerings{
+  padding: 20px;
+  border-radius: 50px 50px 0 0;
+  background-color: var(--light-brown);
+  margin-bottom: 16px;
+}
+
+.site-offerings>p{
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 16px;
+}
+
+.cards-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards{
+  height: auto;
+  padding: 1rem;
+ margin: 1rem;
+background-color: var(--light-yellow);
+border-radius: 10px;
+box-shadow: 0 4px #0000003f;
+transition: ease-in-out 0.3s;
+cursor: pointer;
+}
+
+.cards img{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.cards p{
+  width: 150px;
+}
+
+.cards:hover{
+  scale: 1.1;
+}
+
+/* ------site-offerings-END--------- */
+
+
+/* -----------npda-account-section-------- */
+
+.create-NPDA-accout{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-color: var(--light-brown);
+  border-radius: 50px;
+  padding: 1.5rem;
+}
+
+.create-NPDA-accout img{
+  max-width: 450px;
+  border-radius: 30px;
+min-width: 300px;
+}
+
+.create-NPDA-accout div {
+  padding: 1rem;
+max-width: 400px;
+}
+
+.create-NPDA-accout div h1{
+  font-size: 32px;
+}
+.create-NPDA-accout div p{
+  font-size: 20px;
+  padding: 1rem 0;
+}
+
+.create-NPDA-accout div button{
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* -----------npda-account-section-END---- */
+
+
+
+
+/* -----------------------CONTENT-END---------------------- */
+
+/* --------------- MEDIA-QUERRY--------------- */
+
+@media (max-width: 600px) {
+  .tabs {
+    display: none;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hero p {
+    width: auto;
+  }
+
+  .article-1 .do-you-know {
+    display: block;
+  }
+
+  .article-1 .do-you-know h1,
+  p {
+    margin-bottom: 24px;
+  }
+
+  .create-NPDA-accout {
+    flex-direction: column;
+  }
+
+  .create-NPDA-accout img{
+    width: 100%;
+    
+  }
+}
+
+/* --------------MEDIA-QUERRY-END------------- */
