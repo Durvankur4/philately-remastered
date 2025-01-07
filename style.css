@@ -198,42 +198,43 @@ cursor: pointer;
 /* ------site-offerings-END--------- */
 
 
-/* -----------npda-account-section-------- */
+/* -----------elements-------- */
 
-.create-NPDA-accout{
+.element{
   display: flex;
   align-items: center;
   justify-content:space-around;
   background-color: var(--light-brown);
   border-radius: 50px;
   padding: 1.5rem;
+  margin: 1rem 0;
 }
 
-.create-NPDA-accout img{
+.element img{
   max-width: 450px;
   border-radius: 30px;
-min-width: 300px;
+min-width: 300;
 }
 
-.create-NPDA-accout div {
+.element div {
   padding: 1rem;
 max-width: 400px;
 }
 
-.create-NPDA-accout div h1{
+.element div h1{
   font-size: 32px;
 }
-.create-NPDA-accout div p{
+.element div p{
   font-size: 20px;
   padding: 1rem 0;
 }
 
-.create-NPDA-accout div button{
+.element div button{
   margin: 0;
   margin-bottom: 1.5rem;
 }
 
-/* -----------npda-account-section-END---- */
+/* -----------elements-END---- */
 
 
 
@@ -264,11 +265,11 @@ max-width: 400px;
     margin-bottom: 24px;
   }
 
-  .create-NPDA-accout {
+  .element {
     flex-direction: column;
   }
 
-  .create-NPDA-accout img{
+  .element img{
     width: 100%;
     
   }
