@@ -45,6 +45,11 @@
   margin-right: 16px;
 }
 
+.nav-bar li:hover {
+  scale: 1.1;
+  transition: 0.1s ease-in-out;
+}
+
 button {
   color: var(--white);
   background-color: var(--black);
@@ -54,9 +59,25 @@ button {
   cursor: pointer;
 }
 
-.nav-bar button:last-child {
-  border-radius: 50%;
-  width: 32px;
+.tabs-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 350px;
+  background-color: #ffffff;
+  z-index: 999;
+  box-sizing: 10px 0 10px rgba(0, 0, 0, 0.1);
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tabs-mobile li {
+  padding: 1rem;
 }
 
 /* ------------------NAV-END------------------------------ */
@@ -147,14 +168,14 @@ button {
 /* ----lear-more-END---------- */
 
 /* ------site-offerings--------- */
-.site-offerings{
+.site-offerings {
   padding: 20px;
   border-radius: 50px 50px 0 0;
   background-color: var(--light-brown);
   margin-bottom: 16px;
 }
 
-.site-offerings>p{
+.site-offerings > p {
   display: block;
   text-align: center;
   font-size: 24px;
@@ -162,82 +183,78 @@ button {
   margin: 16px;
 }
 
-.cards-div{
+.cards-div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.cards{
+.cards {
   height: auto;
   padding: 1rem;
- margin: 1rem;
-background-color: var(--light-yellow);
-border-radius: 10px;
-box-shadow: 0 4px #0000003f;
-transition: ease-in-out 0.3s;
-cursor: pointer;
+  margin: 1rem;
+  background-color: var(--light-yellow);
+  border-radius: 10px;
+  box-shadow: 0 4px #0000003f;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
-.cards img{
+.cards img {
   width: 150px;
   height: 150px;
   margin-bottom: 16px;
   border-radius: 10px;
 }
 
-.cards p{
+.cards p {
   width: 150px;
 }
 
-.cards:hover{
+.cards:hover {
   scale: 1.1;
 }
 
 /* ------site-offerings-END--------- */
 
-
 /* -----------elements-------- */
 
-.element{
+.element {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   background-color: var(--light-brown);
   border-radius: 50px;
   padding: 1.5rem;
   margin: 1rem 0;
 }
 
-.element img{
+.element img {
   max-width: 450px;
   border-radius: 30px;
-min-width: 300;
+  min-width: 300;
 }
 
 .element div {
   padding: 1rem;
-max-width: 400px;
+  max-width: 400px;
 }
 
-.element div h1{
+.element div h1 {
   font-size: 32px;
 }
-.element div p{
+.element div p {
   font-size: 20px;
   padding: 1rem 0;
 }
 
-.element div button{
+.element div button {
   margin: 0;
   margin-bottom: 1.5rem;
 }
 
 /* -----------elements-END---- */
-
-
-
 
 /* -----------------------CONTENT-END---------------------- */
 
@@ -269,9 +286,8 @@ max-width: 400px;
     flex-direction: column;
   }
 
-  .element img{
+  .element img {
     width: 100%;
-    
   }
 }
 
