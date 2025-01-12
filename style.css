@@ -15,6 +15,9 @@
 }
 
 /* ------------------NAV-START-------------------------- */
+.menu {
+  display: none;
+}
 
 .nav-bar {
   background-color: var(--light-yellow);
@@ -30,6 +33,7 @@
 
 .nav-bar .logo {
   margin-top: 10px;
+  
 }
 
 .nav-bar li a {
@@ -40,9 +44,16 @@
 }
 
 .nav-bar li {
-  display: inline-block;
+ 
   list-style: none;
-  margin-right: 16px;
+
+}
+
+.tabs{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nav-bar li:hover {
@@ -59,25 +70,32 @@ button {
   cursor: pointer;
 }
 
-.tabs-mobile {
+.sidebar-menu {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 100%;
   max-width: 350px;
-  background-color: #ffffff;
+  background-color: var(--light-brown);
   z-index: 999;
   box-sizing: 10px 0 10px rgba(0, 0, 0, 0.1);
- 
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.tabs-mobile li {
+.sidebar-menu li {
   padding: 1rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-none {
+  display: none;
 }
 
 /* ------------------NAV-END------------------------------ */
@@ -256,6 +274,15 @@ button {
 
 /* -----------elements-END---- */
 
+
+.blog-post-element, .create-NPDA-accout{
+  background-color: var(--light-brown);
+}
+
+.philately-market,.join-philately{
+  background-color: var(--light-yellow);
+}
+
 /* -----------------------CONTENT-END---------------------- */
 
 /* --------------- MEDIA-QUERRY--------------- */
@@ -263,6 +290,10 @@ button {
 @media (max-width: 600px) {
   .tabs {
     display: none;
+  }
+
+  .menu {
+    display: block;
   }
 
   .hero {

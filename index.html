@@ -1,117 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
-    <title>Philately Hut</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+  <title>Philately Hut</title>
 </head>
+
 <body>
 
-    
-    <nav class="nav-bar">
-            <div class="logo"><a href="#"><img src="./images/logo.png"> </a></div>
-          <ul class="tabs">
-            
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Newsletters</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">NPDA</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
 
-          <ul class="tabs-mobile">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Newsletters</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">NPDA</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
-            
-        </div>
-    </nav>
+  <nav class="nav-bar">
+    <div class="logo"><a href="#"><img src="./images/logo.png"> </a></div>
+    <ul class="tabs">
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Newsletters</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">NPDA</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
 
+    <a href="#" class="menu" onclick=toogleSidebar()><img src="./images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+      srcset=""></a>
 
-    <div class="hero">
-      <h1>A World of Stamps at your fingertips.</h1>
-      <p>A one-stop, simple & easy-to-use platform that serves your philatelic passion.</p>
+    <ul class="sidebar-menu">
+      <li onclick=toogleSidebar()><a href="#"><img src="./images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset=""></a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Newsletters</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">NPDA</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+
     </div>
-    
+  </nav>
 
-    <article class="article-1">
-      <div class="do-you-know">
-        <h1>Do you know what is Philately?</h1>
-        <p>Philately is the study and collection of postage stamps, postal history, and related materials. It's a hobby that has been gaining popularity for centuries. Collectors, known as philatelists, often study the stamps' design, history, value, and rarity.</p>
+
+  <div class="hero">
+    <h1>A World of Stamps at your fingertips.</h1>
+    <p>A one-stop, simple & easy-to-use platform that serves your philatelic passion.</p>
+  </div>
+
+
+  <article class="article-1">
+    <div class="do-you-know">
+      <h1>Do you know what is Philately?</h1>
+      <p>Philately is the study and collection of postage stamps, postal history, and related materials. It's a hobby
+        that has been gaining popularity for centuries. Collectors, known as philatelists, often study the stamps'
+        design, history, value, and rarity.</p>
+    </div>
+    <div class="philately-story">
+      <h1>A Story of Stamps: The Indian Philatelic Journey.</h1>
+      <span>Once upon a time, in the year 1854, a new era began in India. It wasn't the dawn of a new king or a grand
+        revolution, but a much smaller, yet significant event: the introduction of postage stamps.
+      </span><br>
+      <span>These first stamps, known as the "Bullock Cart" stamps, were simple but groundbreaking. They featured a
+        humble bullock cart, a symbol of the rural life that was so essential to India's identity. As time went on,
+        these stamps became more than just pieces of paper; they became a visual diary of the nation's history.
+      </span><br>
+      <span>India's rich tapestry of culture, history, and nature was woven into the stamps. Majestic tigers, gentle
+        elephants, and colourful birds found their place on these tiny canvases. Important events like Independence Day
+        and Republic Day were commemorated, and the nation's rich cultural heritage, from traditional art to vibrant
+        festivals, was celebrated.
+      </span><br>
+      <span>Each stamp told a story, a tiny piece of India's grand narrative. From the early days of the British Raj to
+        the vibrant India of today, these stamps have witnessed it all. They are more than just collectibles; they are
+        time capsules, preserving the essence of a nation's journey.</span>
+    </div>
+  </article>
+
+  <div class="learn-more">
+    <p>Click to learn more about Philately</p>
+    <button>Learn More</button>
+  </div>
+
+  <div class="site-offerings">
+    <p>What our site offers?</p>
+    <div class="cards-div">
+      <div class="cards"><img src="./images/card-images/card-1.png" alt="">
+        <p>Your one-stop philately shop.</p>
       </div>
-      <div class="philately-story"><h1>A Story of Stamps: The Indian Philatelic Journey.</h1>
-        <span>Once upon a time, in the year 1854, a new era began in India. It wasn't the dawn of a new king or a grand revolution, but a much smaller, yet significant event: the introduction of postage stamps.
-        </span><br>
-        <span>These first stamps, known as the "Bullock Cart" stamps, were simple but groundbreaking. They featured a humble bullock cart, a symbol of the rural life that was so essential to India's identity. As time went on, these stamps became more than just pieces of paper; they became a visual diary of the nation's history.
-        </span><br>
-        <span>India's rich tapestry of culture, history, and nature was woven into the stamps. Majestic tigers, gentle elephants, and colourful birds found their place on these tiny canvases. Important events like Independence Day and Republic Day were commemorated, and the nation's rich cultural heritage, from traditional art to vibrant festivals, was celebrated.
-        </span><br>
-       <span>Each stamp told a story, a tiny piece of India's grand narrative. From the early days of the British Raj to the vibrant India of today, these stamps have witnessed it all. They are more than just collectibles; they are time capsules, preserving the essence of a nation's journey.</span></div> 
-    </article>
-
-    <div class="learn-more">
-     <p>Click to learn more about Philately</p>
-        <button>Learn More</button>
-    </div>
-
-    <div class="site-offerings">
-      <p>What our site offers?</p>
-      <div class="cards-div">
-        <div class="cards"><img src="./images/card-images/card-1.png" alt=""><p>Your one-stop philately shop.</p></div>
-      <div class="cards"><img src="./images/card-images/card-2.png" alt=""><p>Access to amazing blogposts.</p></div>
-      <div class="cards"><img src="./images/card-images/card-3.png" alt=""><p>Create your NPDA account with ease.</p></div>
-      <div class="cards"><img src="./images/card-images/card-4.png" alt=""><p>Connect with the philatelists.</p></div>
-      <div class="cards"><img src="./images/card-images/card-5.png" alt=""><p>Access to the newsletters.</p></div>
+      <div class="cards"><img src="./images/card-images/card-2.png" alt="">
+        <p>Access to amazing blogposts.</p>
+      </div>
+      <div class="cards"><img src="./images/card-images/card-3.png" alt="">
+        <p>Create your NPDA account with ease.</p>
+      </div>
+      <div class="cards"><img src="./images/card-images/card-4.png" alt="">
+        <p>Connect with the philatelists.</p>
+      </div>
+      <div class="cards"><img src="./images/card-images/card-5.png" alt="">
+        <p>Access to the newsletters.</p>
       </div>
     </div>
+  </div>
 
   <!-- element -->
 
-    <article class="element join-philately">
-      <img src="./images/join-philalely.png" alt="">
-      <div>
-        <h1>Join the vibrant Philatelist
-          Community today!</h1>
-        <p>Connect with the philatelists all around the nation...Share and let share!</p>
-        <button>Join Now</button>
-      </div>
-    </article>
+  <article class="element join-philately">
+    <img src="./images/join-philalely.png" alt="">
+    <div>
+      <h1>Join the vibrant Philatelist
+        Community today!</h1>
+      <p>Connect with the philatelists all around the nation...Share and let share!</p>
+      <button>Join Now</button>
+    </div>
+  </article>
 
-    <article class="element create-NPDA-accout">
-      <div>
-        <h1>Create your NPDA account</h1>
-        <p>A centralised online account system for philatelists to deposit funds and purchase philatelic materials from various postal circles in India, simplifying transactions and removing geographical barriers for collectors.</p>
-        <button>Create Now</button>
-      </div>
-      <img src="./images/create-npda-account-img.png" alt="">
-    </article>
+  <article class="element create-NPDA-accout">
+    <div>
+      <h1>Create your NPDA account</h1>
+      <p>A centralised online account system for philatelists to deposit funds and purchase philatelic materials from
+        various postal circles in India, simplifying transactions and removing geographical barriers for collectors.</p>
+      <button>Create Now</button>
+    </div>
+    <img src="./images/create-npda-account-img.png" alt="">
+  </article>
 
-    <article class="element philately-market">
-      <img src="./images/philately-market.jpg" alt="">
-      <div>
-        <h1>Your Philately Market!</h1>
-        <p>Discover a world of philatelic treasures at Philately Hut. Our online store offers a vast collection of stamps, first-day covers, albums, and other philatelic materials from around the nation. Whether you're a seasoned collector or just starting your journey, we have something for everyone. </p>
-        <button>shop Now</button>
-      </div>
-    </article>
+  <article class="element philately-market">
+    <img src="./images/philately-market.jpg" alt="">
+    <div>
+      <h1>Your Philately Market!</h1>
+      <p>Discover a world of philatelic treasures at Philately Hut. Our online store offers a vast collection of stamps,
+        first-day covers, albums, and other philatelic materials from around the nation. Whether you're a seasoned
+        collector or just starting your journey, we have something for everyone. </p>
+      <button>shop Now</button>
+    </div>
+  </article>
 
-    <article class="element blog-post-element">
-      <div>
-        <h1>Blogposts you might love!</h1>
-<p>Dive into the fascinating world of philately with our informative and engaging blog. Discover captivating stories, expert tips, and valuable insights from seasoned collectors. Stay up-to-date on the latest philatelic news, trends, and events. </p>
-        <button>Read blogs</button>
-      </div>
-      <img src="./images/blogpost-element.png" alt="">
-    </article>
+  <article class="element blog-post-element">
+    <div>
+      <h1>Blogposts you might love!</h1>
+      <p>Dive into the fascinating world of philately with our informative and engaging blog. Discover captivating
+        stories, expert tips, and valuable insights from seasoned collectors. Stay up-to-date on the latest philatelic
+        news, trends, and events. </p>
+      <button>Read blogs</button>
+    </div>
+    <img src="./images/blogpost-element.png" alt="">
+  </article>
 
-    <!-- element-END -->
+  <!-- element-END -->
 
 
+  <!-- script-->
+  <script src="./script.js"></script>
+  <!-- script-END-->
 </body>
+
 </html>
